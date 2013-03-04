@@ -1,5 +1,5 @@
 // Global settings
-_emaFeed = "http://blog.codiceplastico.com/ema/?feed=rss2";
+_emaFeed = "http://ema.codiceplastico.com/atom.xml";
 _aleFeed = "http://blog.codiceplastico.com/melkio/?feed=rss2";
 
 // _emaFeed = "media/ema.xml";
@@ -30,6 +30,7 @@ $(function () {
 		$("#subMainMenu").load("menu.html", function () {	
 			if ((pageName === "http://www.codiceplastico.com/") || 
 					(pageName === "http://codiceplastico.com/") || 
+					(pageName === "http://codiceplastico.github.com/") || 
 					(pageName === "") || 
 					(pageName === null))
 				pageName = "Home";
@@ -97,6 +98,7 @@ $(function () {
 		  (pageName === "home") ||
 		  (pageName === "http://www.codiceplastico.com/") || 
 		  (pageName === "http://codiceplastico.com/") || 
+		  (pageName === "http://codiceplastico.github.com/") || 
 		  (pageName === "") || 
 		  (pageName === null)) {
 		var emaCompleted = false;
