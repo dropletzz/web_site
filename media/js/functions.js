@@ -19,6 +19,7 @@ $(function () {
 		var pageName = window.location.href.substring(lastSlash + 1, startOfExtension);
 		return pageName;
 	}
+
 	
 	// set the F3 suffix to the string (active menu img)
 	function addF3(src) {
