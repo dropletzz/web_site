@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>M# blog</title>
+	<atom:link href="http://blog.codiceplastico.com/melkio/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://blog.codiceplastico.com/melkio</link>
+	<description>() =&#62; melkio.OnStage();</description>
+	<lastBuildDate>Fri, 01 Jul 2011 11:39:11 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.1.2</generator>
+		<item>
+		<title>ValueObject: questo sconosciuto</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/07/01/valueobject-questo-sconosciuto/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/07/01/valueobject-questo-sconosciuto/#comments</comments>
+		<pubDate>Fri, 01 Jul 2011 11:39:11 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[DDD]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/?p=72</guid>
+		<description><![CDATA[Uno dei concetti apparentemente più semplici del libro di Evans è quello di value object. Riporto fedelmente la sua definizione per non incorrere in errori e/o omissioni: &#8220;&#8230;there are cases when we need to contain some attributes of a domain element. We are not interested in which object it is, but what attributes it has. [...]]]></description>
+			<content:encoded><![CDATA[<p>Uno dei concetti apparentemente più semplici del libro di Evans è quello di value object. Riporto fedelmente la sua definizione per non incorrere in errori e/o omissioni:</p>
+<p>&#8220;&#8230;there are cases when we need to contain some attributes of a domain element. We are not interested in which object it is, but  what attributes it has. An object that is used to describe certain  aspects of a domain, and which does not have identity, is named Value Object&#8230;&#8221;</p>
+<p>Ogni value object porta (o almeno dovrebbe) con se alcune peculiarit&agrave; che lo caratterizzano come il fatto di essere immutable, &#8220;sharabile&#8221; tra varie entity e non avere alcun concetto di identit&agrave;.<br />
+Queste caratteristiche si traducono in esplicite richieste implementative che vanno assolutamente soddisfatte:</p>
+<ul>
+<li>ogni value object viene creato inizializzandone i suoi attributi e per tutto il suo life-cycle non deve avere la possibilit&agrave; di modificare il suo stato interno</li>
+<li>per mia scelta personale, se possibile, evito di esporre lo stato interno di un value object. Se sono costretto a farlo (sotto tortura <img src='http://blog.codiceplastico.com/melkio/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' />  ) lo faccio comunque solo in lettura</li>
+<li>se si vuole cambiare lo stato interno di un value object se ne crea uno nuovo</li>
+<li>non avendo intrinsecamente un concetto di identit&agrave; deve ridefinire il modo in cui è possibile valutarne l&#8217;uguaglianza con un altro value object dello stesso tipo</li>
+</ul>
+<p>Individuare correttamente i value object che decorano il nostro dominio non è un&#8217;attivit&agrave; semplice e soprattutto è un&#8217;attivit&agrave; spesso trascurata/tralasciata. Solo dopo un&#8217;attenta (l&#8217;ennesima) rilettura di alcune parti del libro di Evans ho colto l&#8217;importanza che viene data a questo particolare aspetto del nostro dominio.</p>
+<p>Con poche accortezze, il nostro anemico object model acquisisce sostanza e ogni componente del puzzle si incastra perfettamente al suo posto.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/07/01/valueobject-questo-sconosciuto/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>L&#8217;importanza dei contesti</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/06/13/l-importanza-dei-contesti/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/06/13/l-importanza-dei-contesti/#comments</comments>
+		<pubDate>Mon, 13 Jun 2011 20:40:45 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[BoundedContext]]></category>
+		<category><![CDATA[DDD]]></category>
+		<category><![CDATA[DistributedSystem]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/?p=66</guid>
+		<description><![CDATA[Sollecitato dai commenti di Davide e Francesco, riprendiamo il discorso del post precedente e cerchiamo di analizzare e sviscerare un po&#8217; di più le situazioni che sempre più spesso mi capita di vedere. Quello che Davide e Francesco &#8220;contestano&#8221; della visione descritta nel post precedente credo sia dettata da una loro visione data-centrica: il dato [...]]]></description>
+			<content:encoded><![CDATA[<p>Sollecitato dai commenti di <a href="http://www.davidemauri.it">Davide</a> e Francesco, riprendiamo il discorso del <a href="http://blog.codiceplastico.com/melkio/2011/06/09/questo-database-amico-nemico/">post precedente</a> e cerchiamo di analizzare e sviscerare un po&#8217; di più le situazioni che sempre più spesso mi capita di vedere.</p>
+<p>Quello che Davide e Francesco &#8220;contestano&#8221; della visione descritta nel post precedente credo sia dettata da una loro visione data-centrica: il dato prima di tutto&#8230;e detta così potrebbe sembrare ovvia <img src='http://blog.codiceplastico.com/melkio/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' />  Ma non è così semplice: il dato cambia, non solo nella sostanza, ma anche e soprattutto nella forma e ciò che ne delinea i contorni sono i processi di business che le nostre applicazioni modellano.<br />
+Guardare il dato in un particolare istante significa fare uno snapshot dello stato di un processo&#8230;ma mentre lo stiamo guardando e analizzando quel dato potrebbe gi&agrave; essere vecchio, ma non solo&#8230;potrebbe anche avere una &#8220;forma&#8221; talmente vecchia da non essere più utile.</p>
+<p>La mia idea non è quella di creare dei gateway verso i dati, ma delineare in modo marcato i confini dei processi in cui ogni dato acquisisce un particolare significato. E&#8217; solo attraverso il processo che si può capire il valore di un dato.<br />
+Chiunque debba interagire con i dati in lettura lo *può* fare attraverso le API che i processi metteranno a disposizione, ma soprattutto quando si deve interagire in scrittura l&#8217;unico modo per non correre il rischio di portare il sistema in uno stato inconsistente è quello di delegare le nostre richieste a chi le sa gestire. Questo attore non può essere il database, che ha (e deve avere) altri compiti.</p>
+<p>In un ambiente distribuito questa &#8220;compartimentazione&#8221; è manna dal cielo: come afferma il <a href="http://en.wikipedia.org/wiki/CAP_theorem">CAP theorem</a>, non è possibile garantire contemporaneamente consistenza, &#8220;disponibilit&agrave;&#8221; e tolleranza al partizionamento di rete (non so se si traduce così <img src='http://blog.codiceplastico.com/melkio/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' />  )per un sistema distribuito. Garantire due di questi aspetti, in base alle esigenze, suddividendo l&#8217;intero sistema in contesti è *la* soluzione per semplificare il problema&#8230;ma di questo ne parliamo la prossima volta.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/06/13/l-importanza-dei-contesti/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Questo database amico-nemico</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/06/09/questo-database-amico-nemico/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/06/09/questo-database-amico-nemico/#comments</comments>
+		<pubDate>Thu, 09 Jun 2011 09:40:22 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[DDD]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/?p=61</guid>
+		<description><![CDATA[Sempre più spesso mi trovo a ripetere (e convincermi) che il database deve essere un servizio al servizio dell&#8217;applicazione e non viceversa. In ottica DDD questa affermazione diventa ancora più forte: &#8220;il database è mio e lo gestisco io&#8221; (semi cit.) Molto spesso però, questo modo di vedere le cose stride (eufemismo) con la forma [...]]]></description>
+			<content:encoded><![CDATA[<p>Sempre più spesso mi trovo a ripetere (e convincermi) che il database deve essere un servizio al servizio <img src='http://blog.codiceplastico.com/melkio/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' />  dell&#8217;applicazione e non viceversa. In ottica DDD questa affermazione diventa ancora più forte: &#8220;il database è mio e lo gestisco io&#8221; (semi cit.)</p>
+<p>Molto spesso però, questo modo di vedere le cose stride (eufemismo) con la forma mentis dei DBA e di chi deve gestire i dati. Ma non solo&#8230;il pensiero di non poter *gestire* il database ed i suoi dati sembra precludere qualsiasi forma di estensione ed apertura ad altre applicazioni all&#8217;utilizzo delle informazioni in nostro possesso. Sembra quasi che aprire, in sola lettura, le tabelle del nostro database ad altre applicazioni significhi avere un&#8217;architettura facilmente estendibile ed integrabile.</p>
+<p>Bene&#8230;anzi male, molto male. Questo significa complicare ancora più le cose e rendere sempre meno rifattorizzabile il nostro database: adesso la modifica anche di  un solo campo di una tabella &#8220;condivisa&#8221; non impatta solo sulla nostra applicazione, ma anche su tutte quelle a cui abbiamo permesso di attingere direttamente ai nostri dati.<br />
+Un&#8217;operazione di questo genere significa non poter evolvere il database (dove per evolvere intendo anche correggere errori fatti in fase di sviluppo) e visto che il database è parte della nostra applicazione significa avere un debito tecnico costante che non potr&agrave; fare altro che aumentare nel corso dello sviluppo.</p>
+<p>Se altre applicazioni hanno bisogno di &#8220;vedere&#8221; i miei dati, mi fanno la cortesia di chiedermeli (con gentilezza) ed, eventualmente, sarò ben lieto di metterglieli a disposizione senza l&#8217;obbligo di dovergli dire come e dove li ho &#8220;storati&#8221; e quindi senza l&#8217;obbligo di non poter cambiare più.</p>
+<p>Queste false credenze mi ricordano tanto la sensazione di aver sviluppato un&#8217;applicazione distribuita semplicemente facendo &#8220;Add service reference&#8221; al nostro progetto da Visual Studio&#8230;ma questa è un&#8217;altra storia.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/06/09/questo-database-amico-nemico/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Download delle sessioni del MIX 2011</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/04/19/download-delle-sessioni-del-mix-2011/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/04/19/download-delle-sessioni-del-mix-2011/#comments</comments>
+		<pubDate>Tue, 19 Apr 2011 10:55:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Conf]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=446280f7-194f-4c34-9548-780c05053483</guid>
+		<description><![CDATA[Perfetto&#8230;tutte le sessioni del MIX sono online, ma come fare per farne il download, in modalit&agrave; silent? Partendo da questo post di Scott Hanselman mi sono scritto una piccola applicazione console per avere la possibilit&agrave; di scaricare in modalit&agrave; batch tutte le sessioni. Trovate l&#8217;applicazione (bin e src) in allegato. Basta eseguirla dal prompt specificando [...]]]></description>
+			<content:encoded><![CDATA[<p>Perfetto&#8230;tutte le sessioni del <a href="http://www.microsoft.com/events/mix/"><span class="s1">MIX</span></a> sono online, ma come fare per farne il download, in modalit&agrave; silent?</p>
+<p class="p1">Partendo da questo <a href="http://www.hanselman.com/blog/Mix11VideosDownloadThemAllWithRSS.aspx"><span class="s1">post</span></a> di <a href="http://www.hanselman.com/blog/"><span class="s1">Scott Hanselman</span></a> mi sono scritto una piccola applicazione console per avere la possibilit&agrave; di scaricare in modalit&agrave; batch tutte le sessioni.</p>
+<p class="p1">Trovate l&#8217;applicazione (bin e src) in allegato. Basta eseguirla dal prompt specificando la tipologia della risorsa che si vuole scaricare e la folder in cui si vuole scaricare il materiale. I possibili valori per il primo parametro sono:</p>
+<ul class="ul1">
+<li class="li2">mp4</li>
+<li class="li2">mp4high</li>
+<li class="li2">wmv</li>
+<li class="li2">wmvhigh</li>
+<li class="li2">mp3</li>
+</ul>
+<p class="p1">Esempio: MIX2011 mp4 &#8220;d:downloadsmix2011&#8243;</p>
+<p class="p1">L&#8217;applicazione, partendo dalla folder specificata, crea una struttura con n sub-folder dove il nome è il codice della sessione. Ogni sub-folder contiene:</p>
+<ul class="ul1">
+<li class="li2">abstract.html</li>
+<li class="li2">title.txt</li>
+<li class="li2">[codice sessione].wmv (o mp3 o mp4 a seconda della scelta fatta)</li>
+</ul>
+<p class="p1">Il codice è scritto in poco più di dieci minuti, quindi non c&#8217;è nessun controllo del caso (ovvero specificate i parametri in modo corretto altrimenti &#8220;nisba&#8221;) e&#8230;non mi assumo nessuna responsabilit&agrave; se vi si dovesse formattare il disco al termine del download <img src='http://blog.codiceplastico.com/melkio/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+<p>&nbsp;</p>
+<p><a href="http://blog.codiceplastico.com/melkio/file.axd?file=2011%2f4%2fbin.zip">bin.zip (3.32 kb)</a></p>
+<p><a href="http://blog.codiceplastico.com/melkio/file.axd?file=2011%2f4%2fsource.zip">source.zip (2.62 kb)</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/04/19/download-delle-sessioni-del-mix-2011/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Sync framework: un po&#8217; di link</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/04/06/sync-framework-un-po-di-link/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/04/06/sync-framework-un-po-di-link/#comments</comments>
+		<pubDate>Wed, 06 Apr 2011 15:11:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[SyncFramework]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=69859e18-fd91-41f5-9a89-d888e2e62e2a</guid>
+		<description><![CDATA[In questo ultimo periodo mi sono &#8220;dilettato&#8221; con il sync framework (arrivato alla versione 4.0 in CTP) per risolvere l&#8217;annoso problema di sincronizzazione tra un db master ed un db slave utilizzato nei casi in cui l&#8217;applicazione vada off-line. Avevo dato un occhio a questo framework in una delle sue primissime versioni e l&#8217;impressione è [...]]]></description>
+			<content:encoded><![CDATA[<p>In questo ultimo periodo mi sono &#8220;dilettato&#8221; con il sync framework (arrivato alla versione 4.0 in CTP) per risolvere l&#8217;annoso problema di sincronizzazione tra un db master ed un db slave utilizzato nei casi in cui l&#8217;applicazione vada off-line.</p>
+<p>Avevo dato un occhio a questo framework in una delle sue primissime versioni e l&#8217;impressione è che siano notevoli i passi avanti compiuti, anche e soprattutto nell&#8217;ottica dell&#8217;estendibilit&agrave; e customizzazione.</p>
+<p>Tornando a noi, iniziamo con un paio di link utili per l&#8217;installazione:</p>
+<ul>
+<li><a title="Sync Framework 2.1 SDK" href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=ee6af141-79d0-4351-a4a0-ea89bb29dcf5&amp;displaylang=en" target="_blank">Sync Framework 2.1 SDK</a> (la versione 4.0 è costruita sulla versione 2.1, rendendola ovviamente necesaria)</li>
+<li>Nel caso in cui il S.O. sia a 64 bit e lo sviluppo avviene con VisualStudio (con che altro?) è necessario installare la versione x86 del <a title="Sync Framework 2.1 Redistributable Package" href="http://www.microsoft.com/Downloads/en/details.aspx?FamilyID=c3b2f32b-12a9-40b8-9e83-c452ac546c49&amp;displaylang=en" target="_blank">Sync Framework 2.1 Redistributable Package</a></li>
+<li><a title="Sync Framework 4.0 October 2010 CTP" href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=afd89099-d589-423c-9762-78096aa95ac2&amp;displaylang=en" target="_blank">Sync Framework 4.0 October 2010 CTP</a> (finalmente)</li>
+</ul>
+<p>Nel prossimo post vedremo come utilizzare questo (potente) strumento, cercando di sopperire alla scarsa documentazione &#8220;real&#8221; che si trova in rete&#8230;stay tuned!!!</p>
+<div class="posttagsblock"><a rel="tag" href="http://technorati.com/tag/SyncFramework">SyncFramework</a>, <a rel="tag" href="http://technorati.com/tag/.Net">.Net</a></div>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/04/06/sync-framework-un-po-di-link/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>NoSql day: una giornata eccezionale!!!</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/03/28/nosql-day-una-giornata-eccezionale/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/03/28/nosql-day-una-giornata-eccezionale/#comments</comments>
+		<pubDate>Mon, 28 Mar 2011 20:05:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Conf]]></category>
+		<category><![CDATA[NoSql]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=8662e11f-d772-48ea-a2f4-cfb903493262</guid>
+		<description><![CDATA[Prima di un più o meno dettagliato resoconto della giornata, mi ritaglio poche righe per congratularmi con gli organizzatori della conferenza. La giornata è stata veramente eccezionale, le sessioni (quasi) tutte di alto contenuto informativo, gli speaker all&#8217;altezza, con qualche picco esagerato e l&#8217;organizzazione impeccabile&#8230;COMPLIMENTI A TUTTI!!! Tornando a noi, la giornata è stata veramente [...]]]></description>
+			<content:encoded><![CDATA[<p>Prima di un più o meno dettagliato resoconto della giornata, mi ritaglio poche righe per congratularmi con gli <a title="organizzatori della conferenza" href="http://www.webdebs.org/" target="_blank">organizzatori della conferenza</a>. La <a title="giornata" href="http://www.nosqlday.it/" target="_blank">giornata</a> è stata veramente eccezionale, le sessioni (quasi) tutte di alto contenuto informativo, gli speaker all&#8217;altezza, con qualche picco esagerato e l&#8217;organizzazione impeccabile&#8230;COMPLIMENTI A TUTTI!!!</p>
+<p>Tornando a noi, la giornata è stata veramente entusiasmante, è stata una ventata di aria fresca per il lavoro di tutti i giorni. Tanta la carne al fuoco&#8230;veramente tanta.<br />
+Nella &#8220;top ten&#8221; della giornata entrano di diritto la sessione tecnica di <a title="Gabriele Lana" href="http://www.gabrielelana.it/" target="_blank">Gabriele Lana</a> su <a title="MongoDb" href="http://www.mongodb.org/" target="_blank">MongoDb</a> e quella di <a title="Luca Bonmassar" href="http://www.nosqlday.it/#bonmassar" target="_blank">Luca Bonmassar</a> su pattern e antipattern sull&#8217;utilizzo di database relazionali e nosql.<br />
+Nota di merito particolare a <a title="Salvatore Sanfilippo" href="http://invece.org/" target="_blank">Salvatore Sanfilippo</a> e la sua sessione: semplicemente fantastica e <a title="Redis" href="http://redis.io/" target="_blank">Redis</a> assolutamente da approfondire.</p>
+<p>Cosa mi porto a casa da questa giornata? Tante cose, ma sicuramente:</p>
+<ul>
+<li>NoSql = <strong>Not only</strong> sql</li>
+<li>ognuno si &#8220;stora&#8221; i dati come vuole <img src='http://blog.codiceplastico.com/melkio/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' />  ma soprattutto ogni use case ha il suo &#8220;storage&#8221; preferenziale</li>
+<li>MongoDb mi piace&#8230;e parecchio&#8230;</li>
+<li>l&agrave; fuori c&#8217;è ancora un sacco di &#8220;roba&#8221; da scoprire</li>
+</ul>
+<p>&nbsp;</p>
+<div class="posttagsblock"><a rel="tag" href="http://technorati.com/tag/Conf">Conf</a>, <a rel="tag" href="http://technorati.com/tag/NoSql">NoSql</a></div>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/03/28/nosql-day-una-giornata-eccezionale/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>DDD, Aggregate e FK</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/03/15/ddd-aggregate-e-fk/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/03/15/ddd-aggregate-e-fk/#comments</comments>
+		<pubDate>Tue, 15 Mar 2011 20:18:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[CQRS]]></category>
+		<category><![CDATA[DDD]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=6951e542-e24a-4439-a2f6-170aaeff7d56</guid>
+		<description><![CDATA[I concetti di aggregate e di aggregate root nell&#8217;ecosistema di domain driven design ricoprono un ruolo fondamentale: l&#8217;aggregate garantisce un raggruppamento logico delle varie entities e value objects. L&#8217;aggregate root è il &#8220;guardiano&#8221; e l&#8217;unico punto di accesso ad un aggregate, che identifica una singola unit&agrave; di persistenza. Il concetto di raggruppamento logico e quindi [...]]]></description>
+			<content:encoded><![CDATA[<p>I concetti di aggregate e di aggregate root nell&#8217;ecosistema di domain driven design ricoprono un ruolo fondamentale: l&#8217;aggregate garantisce un raggruppamento logico delle varie entities e value objects. L&#8217;aggregate root è il &#8220;guardiano&#8221; e l&#8217;unico punto di accesso ad un aggregate, che identifica una singola unit&agrave; di persistenza.<br />
+Il concetto di raggruppamento logico e quindi di aggregate permette di gestire insiemi di entities e value objects come se fossero un&#8217;unica entit&agrave;.</p>
+<p>Molto spesso è proprio la mancanza o la non corretta identificazione di aggregate e aggregate root a portare alla falsa sensazione di approcciare lo sviluppo dell&#8217;applicazione in DDD e, soprattutto, alla possibilit&agrave; di evolvere facilmente il nostro dominio. Questo falso sentore si scontra, solitamente, con la realt&agrave; nel breve volgere di qualche iterazione.</p>
+<p>In un&#8217;ottica DDD-oriented anche il database *deve* essere al servizio del nostro modello e non vincolarne la sua evoluzione imponendo dei limiti dovuti alla necessit&agrave; di sottostare al modello relazionale: definendo un aggregate vengono implicitamente definiti i confini dell&#8217;unit&agrave; minima di consistenza. Foreign key che valicano i confini di un aggregate sono il sintomo di un qualcosa che non va: bisogna imparare a pensare in termini di &#8220;eventual consistency&#8221; oppure ripensare e ridisegnare i confini dei nostri aggregate.</p>
+<div class="posttagsblock"><a rel="tag" href="http://technorati.com/tag/DDD">DDD</a></div>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/03/15/ddd-aggregate-e-fk/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>CQRS wiki</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/03/08/cqrs-wiki/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/03/08/cqrs-wiki/#comments</comments>
+		<pubDate>Tue, 08 Mar 2011 11:22:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[CQRS]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=0b717fb0-a3cf-49d9-82b6-0fb2a809898f</guid>
+		<description><![CDATA[Per chi è interessato, ha dubbi, perplessit&agrave; o è semplicemente curioso ecco un punto di &#8220;accumulazione&#8221; con risorse relative a CQRS: wiki CQRS]]></description>
+			<content:encoded><![CDATA[<p>Per chi è interessato, ha dubbi, perplessit&agrave; o è semplicemente curioso ecco un punto di &#8220;accumulazione&#8221; con risorse relative a CQRS: <a href="http://cqrs-faq.wikispaces.com/" target="_blank">wiki</a></p>
+<div class="posttagsblock"><a rel="tag" href="http://technorati.com/tag/CQRS">CQRS</a></div>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/03/08/cqrs-wiki/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>CQRS @ UgiAltNet</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/02/24/cqrs-ugialtnet/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/02/24/cqrs-ugialtnet/#comments</comments>
+		<pubDate>Thu, 24 Feb 2011 09:44:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Conf]]></category>
+		<category><![CDATA[CQRS]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=47a1f081-efd6-4dba-a967-7e99c37f002e</guid>
+		<description><![CDATA[Sabato si è tenuta la UgiAltNet conference: ottima conferenza, complimenti ancora a tutti gli organizzatori. Questa volta, oltre che partecipare, ho avuto il piacere di tenere una sessione su CQRS ed EventSourcing. Come al solito l&#8217;argomento ha destato parecchio interesse, ma ha sollevato anche parecchi dubbi. Il problema, secondo il mio punto di vista, non [...]]]></description>
+			<content:encoded><![CDATA[<p><span style="font-family: Verdana; font-size: 11px;">Sabato si è tenuta la UgiAltNet conference: ottima conferenza, complimenti ancora a tutti gli organizzatori.</span></p>
+<p style="margin: 0.0px 0.0px 11.0px 0.0px; text-align: justify; font: 11.0px Verdana;">Questa volta, oltre che partecipare, ho avuto il piacere di tenere una sessione su CQRS ed EventSourcing. Come al solito l&#8217;argomento ha destato parecchio interesse, ma ha sollevato anche parecchi dubbi.</p>
+<p style="margin: 0.0px 0.0px 11.0px 0.0px; text-align: justify; font: 11.0px Verdana;">Il problema, secondo il mio punto di vista, non risiede tanto in come CQRS modifica il nostro modo di pensare e sviluppare applicazioni, ma sta alla base: come implementiamo (o crediamo di implementare) DDD?<span style="font: 11.0px 'Lucida Grande';"><br />
+</span>Il grosso problema, come dicevo sabato e come è spesso capitato anche a me, è che si crede di fare DDD, ma invece si è molto lontani da una forma &#8220;razionale&#8221; di Domain Driven Design.</p>
+<p style="margin: 0.0px 0.0px 11.0px 0.0px; text-align: justify; font: 11.0px Verdana;">Sviluppando applicazioni in cui i *behaviors* in gioco sono tanti e, magari, anche complessi, non si può pensare di avere un *unico* modello che in garantisca la *consistenza* del suo stato in ogni istante temporale. Non sto dicendo che non è possibile, ma sto semplicemente dicendo che se così fosse non stiamo facendo DDD. Soprattutto non stiamo dando al nostro modello l&#8217;agilit&agrave; necessaria per evolvere mano a mano che la nostra conoscenza del business cresce, ma lo stiamo soffocando dietro a forti vincoli.</p>
+<p style="margin: 0.0px 0.0px 11.0px 0.0px; text-align: justify; font: 11.0px Verdana;">Ragionare in ottica di behaviors e non di state (o meglio non solo di state), ovvero fare veramente DDD, è la vera rivoluzione, non tanto CQRS che, in un ecosistema di aggregate, bounded context e domain event, si innesta naturalmente.</p>
+<p style="margin: 0.0px 0.0px 11.0px 0.0px; text-align: justify; font: 11.0px Verdana;">Che ne pensate?</p>
+<div class="posttagsblock"><a rel="tag" href="http://technorati.com/tag/DDD">DDD</a>, <a rel="tag" href="http://technorati.com/tag/CQRS">CQRS</a>, <a rel="tag" href="http://technorati.com/tag/Conf">Conf</a></div>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/02/24/cqrs-ugialtnet/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Coming soon&#8230;</title>
+		<link>http://blog.codiceplastico.com/melkio/2011/01/24/coming-soon/</link>
+		<comments>http://blog.codiceplastico.com/melkio/2011/01/24/coming-soon/#comments</comments>
+		<pubDate>Mon, 24 Jan 2011 20:10:00 +0000</pubDate>
+		<dc:creator>melkio</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://blog.codiceplastico.com/melkio/post.aspx?id=dc8917b5-aea2-49b3-a6f9-cd07e59baceb</guid>
+		<description><![CDATA[In attesa di iniziare&#8230; &#160;]]></description>
+			<content:encoded><![CDATA[<p>In attesa di iniziare&#8230;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.codiceplastico.com/melkio/2011/01/24/coming-soon/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
