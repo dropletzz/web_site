@@ -13,17 +13,17 @@ $(function () {
             .animate({'opacity':.1}, 1)
             .animate({'opacity':1}, 10)
             .animate({'opacity':.3}, 1)        
-            .animate({'opacity':1}, 10);
+            .animate({'opacity':0}, 10);
         
         $img.delay(getRandom(1000, 2000))
             .animate({'opacity':.2}, 1)
             .animate({'opacity':1}, 10)
             .animate({'opacity':.5}, 1)
-            .animate({'opacity':1}, 10);
+            .animate({'opacity':0}, 10);
     
         $img.delay(getRandom(500, 2000))
             .animate({'opacity':.1}, 1)
-            .animate({'opacity':1}, 1); 
+            .animate({'opacity':0}, 1); 
         console.log('animate');
         
         setTimeout(flicker, getRandom(5000, 8000));
@@ -33,6 +33,7 @@ $(function () {
         return Math.random() * (max - min) + min;
     }
     
+    $('img').animate({'opacity':0}, 1);
     flicker();
 
 })
