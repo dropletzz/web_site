@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: comicv3;
-    src: url('/media/fonts/Comicv3.ttf');
+    src: url('/media/fonts/Calibre-Semibold.woff');
 }
 
 
@@ -29,7 +29,8 @@ img
 
 #message{
     margin-top: 100px;
-    font-family: comicv3;
+    font-size: 40px;
+    font-family: "Calibre";
 }
 .center-container {
   position: relative;
