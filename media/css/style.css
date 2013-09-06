@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: comicv3;
-    src: url('/media/fonts/Calibre-Semibold.woff');
+    src: url('/media/fonts/Comicv3.woff');
 }
 
 
@@ -28,10 +28,16 @@ img
 
 
 #message{
-    margin-top: 100px;
-    font-size: 40px;
-    font-family: "Calibre";
+    margin-top: 50px;
+    font-family: comicv3;
+	color: #FDBC47;
+	font-size: 20px;
 }
+
+.faded{
+	color: #BC8C35;
+}
+
 .center-container {
   position: relative;
 }
