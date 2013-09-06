@@ -24,7 +24,6 @@ $(function () {
         $img.delay(getRandom(500, 2000))
             .animate({'opacity':.1}, 1)
             .animate({'opacity':0}, 1); 
-        console.log('animate');
         
         setTimeout(flicker, getRandom(5000, 8000));
     }
