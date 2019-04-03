@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
-const WebappWebpackPlugin = require('webapp-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const retrieveParams = (pageData, lang) => {
   const dataJson = require('./data.json');
@@ -218,6 +218,8 @@ module.exports = {
       minify: templateOptions,
       chunks: ['slides']
     }),
-    // new WebappWebpackPlugin('./src/static/favicon.png')
+    new CopyPlugin([
+      { from: 'public/*', to: '', flatten: true }
+    ])
   ]
 };
