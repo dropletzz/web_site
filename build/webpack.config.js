@@ -219,7 +219,11 @@ module.exports = {
       chunks: ['slides']
     }),
     new CopyPlugin([
-      { from: 'public/*', to: '', flatten: true }
+      { from: 'public/*', to: '', flatten: true },
+      { from: 'src/assets/**/*', to: '',   transformPath(t, a) {
+        //  console.log(targetPath, absolutePath);
+         return t.substring(4, t.length);
+        },  }
     ])
   ]
 };
