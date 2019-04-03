@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{{> ../partials/head }}
+
+<body>
+  {{> ../partials/header }}
+  <div id="main" class="container">
+    <header id="case-history-header">
+      <h1>{{{lookup title lang}}}</h1>
+    </header>
+    <ul id="case-history-list">
+      {{#each companies}}
+      <li>
+        <article>
+          <header>
+            <h2>
+              <span>{{lookup this.title ../lang}}</span>
+              {{lookup this.subtitle ../lang}}
+            </h2>
+          </header>
+          <div class="case-history-description">
+            <p>
+              {{lookup this.description ../lang}}
+            </p>
+            <ul class="list-inline tags">
+              {{#each this.tech}}
+              <li>
+                {{this}}
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </article>
+      </li>
+      {{/each}}
+    </ul>
+    {{> ../partials/call-to-action }}
+  </div>
+  {{> ../partials/footer }}
+</body>
+
+</html>

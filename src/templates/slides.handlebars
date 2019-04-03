@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+{{> ../partials/head }}
+
+<body>
+  {{> ../partials/header }}
+  <div id="main" class="container">
+    <header id="slides-header">
+      <h1>
+        Slides Archive
+      </h1>
+    </header>
+    <div id="slides">
+      <img id="loader" src="/assets/images/loader.gif" alt="">
+    </div>
+    <script id="slide_tmpl" type="text/template">
+      <article class="slide">
+        <span class="slide-date">
+          <%=date%>
+        </span>
+        <div class="slide-image">
+          <img src="<%=img%>" alt="" />
+        </div>
+        <header class="slide-content">
+          <h1>
+            <a href="<%=url%>">
+              <%=title%>
+            </a>
+          </h1>
+        </header>
+      </article>
+    </script>
+    {{> ../partials/call-to-action }}
+  </div>
+  {{> ../partials/footer }}
+</body>
+
+</html>

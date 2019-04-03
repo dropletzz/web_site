@@ -1,0 +1,56 @@
+{
+  "seo": {
+    "title": "CodicePlastico",
+    "description": {
+      "en": "",
+      "it": ""
+    }
+  },
+  "og":{
+    "url": "http://codiceplastico.com",
+    "title": "CodicePlastico",
+    "description": {
+      "en": "CodicePlastico is a small but mighty team of software engineers",
+      "it": "CodicePlastico è un grande piccolo team di software engineer"
+    },
+    "image": "http://codiceplastico.com/assets/images/facebook.jpg"
+  },
+  "services": [
+    {
+      "title": {
+        "en": "Fixing and development",
+        "it": "Fixing e sviluppo"
+      },
+      "description": {
+        "en": "The internal teams redesigned the system, changing the batch architecture to a message based system whereby every component is autonomous and communicates with others in an asynchronous way.",
+        "it": "Qualsiasi siano i problemi dei nostri clienti, siamo in grado di entrare nel loro dominio e di trovare un modo di utilizzare la tecnologia per migliorare il loro metodo di lavoro, senza creare frizioni tra l’uomo e il computer."
+      },
+      "image": "/assets/images/readon.png",
+      "link": "case-history/"
+    },
+    {
+      "title": {
+        "en": "Consulting<br/>for your project",
+        "it": "Consulenza<br/>per i tuoi progetti"
+      },
+      "description": {
+        "en": "If you’re about to start a new project and you want to get off on the right foot, we can help you prepare the groundwork for a successful product. Working alongside your team, we choose the right technologies, define the procedures and plan the best architecture for your situation. Alternatively, if your project is almost complete and you want to go live without any problems, we can review your code to identify potential performance, security or maintenance issues.",
+        "it": "Se stai per iniziare un nuovo progetto software e vuoi partire con il piede giusto, ti possiamo aiutare a predisporre le basi per un progetto di successo. Insieme al tuo team effettuiamo le scelte tecnologiche, definiamo le pratiche da usare e predisponiamo l’architettura giusta per il vostro contesto. Se invece il vostro progetto è quasi terminato e volete andare in produzione con una sicurezza in più, possiamo fare una review del vostro codice per identificare eventuali potenziali problemi di performance, sicurezza e manutenzione."
+      },
+      "image": "/assets/images/takealook.png",
+      "link": "case-history/"
+    },
+    {
+      "title": {
+        "en": "Teaching and coaching",
+        "it": "Formazione e coaching"
+      },
+      "description": {
+        "en": "If your team needs updating on the topic of software development and new technologies available, we can organise tailor-made courses for you. You choose the topic, length and format. We’ll take care of the content, making it our responsibility to provide stimulating lessons with teachers that have real experience in working with the tools they teach.",
+        "it": "Se il tuo team vuole essere aggiornato sulle novità tecnologiche e sui temi dello sviluppo software, possiamo organizzare corsi su misura per te, puoi scegliere l’argomento, la durata e il formato del corso. Noi pensiamo ai contenuti e a produrre lezioni con docenti che hanno davvero lavorato con le tecnologie che insegnano."
+      },
+      "image": "/assets/images/dontmiss.png",
+      "link": "slides/"
+    }
+  ]
+}

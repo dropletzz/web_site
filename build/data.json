@@ -1,0 +1,48 @@
+{
+  "seo": {
+    "title": "CodicePlastico",
+    "description": {
+      "en": "CodicePlastico is a small but mighty team of software engineers",
+      "it": "CodicePlastico è un grande piccolo team di software engineer"
+    }
+  },
+  "og":{
+    "url": "http://codiceplastico.com",
+    "title": "CodicePlastico",
+    "description": {
+      "en": "CodicePlastico is a small but mighty team of software engineers",
+      "it": "CodicePlastico è un grande piccolo team di software engineer"
+    },
+    "image": "http://codiceplastico.com/assets/images/facebook.jpg"
+  },
+  "menu": [
+    {
+      "label": {
+        "en": "Case History",
+        "it": "Case History"
+      },
+      "link": "case-history"
+    },
+    {
+      "label": {
+        "en": "Services",
+        "it": "Servizi"
+      },
+      "link": "services"
+    },
+    {
+      "label": {
+        "en": "Blog",
+        "it": "Blog"
+      },
+      "link": "blog"
+    }
+  ],
+  "call_to_action": {
+    "text": {
+      "en": "Do you have a project for us?",
+      "it": "Hai un progetto per noi?"
+    },
+    "mail": "info@codiceplastico.com"
+  }
+}

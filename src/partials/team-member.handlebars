@@ -1,0 +1,12 @@
+{{#each team}}
+<article class="team-member">
+  {{#if (odd @index)}}
+    {{> team-member-content member=this lang=../lang }}
+    {{> team-member-picture member=this lang=../lang }}
+  {{ else }}
+    {{> team-member-picture member=this lang=../lang extraClass="hidden-sm hidden-xs"}}
+    {{> team-member-content member=this lang=../lang }}
+    {{> team-member-picture member=this lang=../lang extraClass="visible-sm visible-xs"}}
+  {{/if}}
+</article>
+{{/each}}

@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "CodicePlastico",
+    "description": {
+      "en": "",
+      "it": ""
+    }
+  },
+  "og":{
+    "url": "http://codiceplastico.com",
+    "title": "CodicePlastico",
+    "description": {
+      "en": "CodicePlastico is a small but mighty team of software engineers",
+      "it": "CodicePlastico è un grande piccolo team di software engineer"
+    },
+    "image": "http://codiceplastico.com/assets/images/facebook.jpg"
+  },
+  "title": {
+    "en": "We have worked with companies all around the globe.<br/>Here are some of them.",
+    "it": "Abbiamo lavorato per aziende sparse in tutto il globo.<br/>Eccone alcune."
+  },
+  "companies": [
+    {
+      "title": {
+        "en": "E-Commerce leader in fashion market ",
+        "it": "E-Commerce leader nel fashion "
+      },
+      "subtitle": {
+        "en": "Old software was migrated through a new asynchronous architecture in order to reduce coupling between various systems and to enable faster-than-ever evolution.",
+        "it": "Ha migrato il suo software verso un’architettura asincrona per ridurre l’accoppiamento tra i vari sistemi ed evolvere più velocemente"
+      },
+      "description": {
+        "en": "The internal teams redesigned the system, changing the batch architecture to a message based system whereby every component is autonomous and communicates with others in an asynchronous way.",
+        "it": "I team interni hanno ridisegnato i sistemi passando da un’architettura batch a un sistema basato sui messaggi in cui ogni componente è autonomo e comunica con gli altri in modo asincrono."
+      },
+      "tech": ["CQRS", "EventSourcing", "MessageBus"]
+    },
+    {
+      "title": {
+        "en": "Nsa",
+        "it": "Nsa"
+      },
+      "subtitle": {
+        "en": "has moved away from Excel spreadsheets to an integrated system for managing their business, thereby multiplying the number of customers and tripling the size of the company.",
+        "it": "È passata dai fogli Excel a un sistema integrato per la gestione delle proprie attività moltiplicando i clienti e triplicando la dimensione"
+      },
+      "description": {
+        "en": "We created a system of two different applications and various services to support NSA’s entire supply chain. From customer analysis to signing the contract, our software provides an entirely automated experience, so managers can know the current state of affairs at all times.",
+        "it": "Un sistema composto da due applicativi e vari servizi per supportare tutta la filiera delle attività di NSA, dall’analisi del cliente alla firma del contratto, tramite il nostro software tutto è automatizzato e i supervisori possono conoscere lo stato corrente in ogni momento."
+      },
+      "tech": ["ASP.NET MVC", "Javascript", "C#", "MongoDb"]
+    },
+    {
+      "title": {
+        "en": "Izsler",
+        "it": "Izsler"
+      },
+      "subtitle": {
+        "en": "has left paper behind in favour of tablets, now managing to keep more farms under control.",
+        "it": "È passata dalla carta al tablet e ora può tenere sott’occhio lo stato degli allevamenti"
+      },
+      "description": {
+        "en": "Before asking for our help, IZSLER used to collect data on animal health using paper questionnaires and calculating the results by hand. With our software, including an android application plus a web application, they have been able to automate all their operations, thus enabling them to check more farms and analyse and extrapolate useful data on animal health.",
+        "it": "Prima del nostro intervento raccoglievano dati sul benessere degli animali usando questionari cartacei e gestendo tutto a mano. Il nostro software composto da un’applicazione Android e una web app ha permesso di controllare molte più stalle e di estrapolare interessanti correlazioni sul benessere animale."
+      },
+      "tech": ["Android", "ASP.NET MVC", "Javascript", "C#", "SQL Server"]
+    },
+    {
+      "title": {
+        "en": "Antare",
+        "it": "Antares"
+      },
+      "subtitle": {
+        "en": "has updated the processes and technologies it uses to develop their applications.",
+        "it": "Ha aggiornato i processi e le tecnologie con cui sviluppa le sue applicazioni"
+      },
+      "description": {
+        "en": "As a direct result of our courses, they were able to update their team on new technologies in Microsoft development and efficient methodologies for developing software.",
+        "it": "Grazie ai nostri corsi si è aggiornata sulle nuove tecnologie in ambito Microsoft e sulle metodologie agili allo sviluppo del software."
+      },
+      "tech": [".NET", "WPF", "Agile", "TestDrivenDevelopment"]
+    },
+    {
+      "title": {
+        "en": "Rossi",
+        "it": "Rossi"
+      },
+      "subtitle": {
+        "en": "is studying the correlation of food habits with some health problems in order to improve the quality of life of its managers and customers.",
+        "it": "Sta studiando le correlazioni tra il cibo e alcune patologie per migliorare lo stile di vita dei suoi clienti"
+      },
+      "description": {
+        "en": "We have developed an application that enables our client to collect data from medical analyses and analyse the results to find correlations, interactions and similarities.",
+        "it": "Abbiamo realizzato un’applicazione per raccogliere dati di analisi cliniche e interpolare i risultati per trovare correlazioni, interazioni e similitudini."
+      },
+      "tech": [".NET", "WPF", "Business Intelligence"]
+    },
+    {
+      "title": {
+        "en": "Bruel",
+        "it": "Bruel"
+      },
+      "subtitle": {
+        "en": "sells its products all over the world with the help of our software.",
+        "it": "Vende in tutto il mondo con il supporto del nostro software"
+      },
+      "description": {
+        "en": "Through the website we created, sales agents can input orders from anywhere in the world using a netbook or iPad, whilst in the company headquarters managers can view the order status in real time.",
+        "it": "Gli agenti creano gli ordini in tutto il mondo con il sito web che abbiamo realizzato usando un iPad o un netbook mentre nella sede centrale possono visualizzare in tempo reale lo stato degli ordini."
+      },
+      "tech": [".NET", "ASP.NET MVC", "Javascript"]
+    },
+    {
+      "title": {
+        "en": "Pama",
+        "it": "Pama"
+      },
+      "subtitle": {
+        "en": "their machines now live longer and are more productive.",
+        "it": "Le loro macchine sono più produttive e vivono più a lungo"
+      },
+      "description": {
+        "en": "We have built software that helps them to control production and calculate the wear and tear on their machines more accurately so that they can maximise the life expectancy of their equipment and improve the production cycle.",
+        "it": "Abbiamo realizzato un software che permette di monitorare la produzione e di calcolare meglio lo stato di usura degli utensili così da massimizzarne la vita e migliorare il ciclo di produzione."
+      },
+      "tech": ["WPF",".NET", "Messaging"]
+    }
+
+  ]
+}

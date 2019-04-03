@@ -1,0 +1,257 @@
+{
+  "seo": {
+    "title": "CodicePlastico",
+    "description": {
+      "en": "CodicePlastico is a small but mighty team of software engineers",
+      "it": "CodicePlastico è un grande piccolo team di software engineer"
+    }
+  },
+  "og":{
+    "url": "http://codiceplastico.com",
+    "title": "CodicePlastico",
+    "description": {
+      "en": "CodicePlastico is a small but mighty team of software engineers",
+      "it": "CodicePlastico è un grande piccolo team di software engineer"
+    },
+    "image": "http://codiceplastico.com/assets/images/facebook.jpg"
+  },
+  "cover": {
+    "en": "We know the technology, so we have the superpowers you need.",
+    "it": "Conosciamo la tecnologia, ergo, abbiamo i superpoteri."
+  },
+  "title": {
+    "en": "CodicePlastico is a small but mighty team<br/>of software engineers",
+    "it": "CodicePlastico è un grande piccolo team<br/>di software engineer"
+  },
+  "description": {
+    "en": "<p>In our team we only have space for those who have a wild passion for technology and perfection. We are a group of 7 developers who like working in a team, but we also give our best working individually listening to our favorite music.</p><p>We strongly believe in keeping each other informed and our typical day always starts with a standup meeting. Training is another fundamental element of our life as developers: we spend a lot of time learning, getting to know and trying out new technologies which helps us improve the way we write software.</p>",
+    "it": "<p>Nel nostro team c’è spazio solo per chi ha una passione sfrenata per la tecnologia e per la perfezione. Siamo 7 sviluppatori, ci piace molto lavorare in squadra, ma diamo il massimo anche da soli, immersi nella nostra musica preferita.</p><p>Crediamo fortemente nella condivisione delle informazioni e la nostra giornata tipo inizia sempre con uno standup meeting di gruppo. La formazione è un altro elemento fondamentale della vita aziendale: dedichiamo molto tempo a capire, conoscere e provare nuove tecnologie per migliorare il modo in cui scriviamo software.</p>"
+  },
+  "team": [
+    {
+      "name": "Alessandro",
+      "nickname": "amelchiori",
+      "fullname": "Alessandro Melchiori",
+      "description": {
+        "en": "Software craftsman, husband, father, ex-sportsman and inquiring reader. Since I was young I have loved taking apart and reassembling things to understand how they work. Now, this passion has become my job: the step from Lego to software development was a short one. Finding the best possible solution so that a complex system can work at its best and making it run smoothly are the goals of my work. C#, WCF, ESB, MongoDb and Azure make up my survival toolkit and help me cruise through distributed systems and enterprise solutions with ease. Be it a command or an event, I try to do my best in contributing to the life of the communities that have adopted me (ugidotnet and WEBdeBS), trying to “give back” at least a part of what I have received over these years.",
+        "it": "Artigiano del software, marito, padre, ex-sportivo e curioso lettore. Mi piaceva fin da piccolo smontare e rimontare le cose, per capire come funzionassero. Ora questa passione è diventata il mio lavoro: dai Lego allo sviluppo software il passo è stato breve. Ogni giorno studio le soluzioni per far funzionare al meglio un sistema complesso, oliandone tutti gli ingraggi. C#, WCF, ESB, MongoDb e Azure fanno parte del mio kit di sopravvivenza e mi aiutano a destreggiarmi tra i sistemi distribuiti e le soluzioni enterprise. Tra un comando e un evento, partecipo attivamente alla vita delle community che mi hanno adottato in questi anni, come Ugidotnet e WEBdeBS."
+      },
+      "images": {
+        "standard": "ale-m-550.png",
+        "super": "ale-m-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/amelchiori"},
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/amelchiori/"},
+        {"name": "Slideshare", "link": "https://www.slideshare.net/melkio"},
+        {"name": "Github", "link": "https://github.com/melkio"}
+      ]
+    },
+    {
+      "name": "Emanuele",
+      "nickname": "emadb",
+      "fullname": "Emanuele Del Bono",
+      "description": {
+        "en": "I am an architect and software developer with more than 10 years’ experience in building web applications. I have always been curious and interested in learning new technologies and new languages, and over the last few years I have spent my time in frontend development, taking in my stride the quirks of javascript and different browser personalities. C#, Ruby, Javascript, Test Driven Development, Patterns and Clean Code are the languages I speak every day. I love to share what I learn, actively participating in conferences as a speaker at numerous events for various developer communities. But I don’t just live for technology: in my spare time I really enjoy freshwater sailing on Lake Garda and being a “perfect dad”.",
+        "it": "Sono un architetto e sviluppatore con decennale esperienza nella realizzazione di applicazioni Web. Sempre curioso e interessato a imparare nuove tecnologie e nuovi linguaggi, negli ultimi anni mi dedico allo sviluppo frontend, districandomi tra le idiosincrasie di Javascript e le personalità dei browser. C#, Ruby, Javascript, Test Driven Development, Pattern e Clean Code sono i linguaggi che parlo ogni giorno. Amo condividere quello che imparo, partecipando attivamente come speaker a numerosi eventi delle community di sviluppatori. Non vivendo di sola tecnologia, mi diletto come velista d’acqua dolce sul Lago di Garda e come padre modello."
+      },
+      "images": {
+        "standard": "ema-550.png",
+        "super": "ema-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/emadb"},
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/emanueledb/"},
+        {"name": "Slideshare", "link": "https://www.slideshare.net/emadb"},
+        {"name": "Github", "link": "https://github.com/emadb"}
+      ]
+    },
+    {
+      "name": "Valeria",
+      "nickname": "vleonardi",
+      "fullname": "Valeria Leonardi",
+      "description": {
+        "en": "Geeky mum, music lover and clarinetist for more than ten years, I successfully share my time between my work and my two children. I started off writing C# code, and today I switch between WPF projects, Asp.NET MVC, Silverlight, to name but a few. After a brief Python development experience, I am now enthusiastic about developing mobile applications for Android. Whilst during the day I work with the team to deliver bespoke projects for clients, once home I \"replace\" the computer with the sewing machine, to dedicate myself to my sewing hobby!",
+        "it": "Mamma geek, appassionata di musica e clarinettista da più di dieci anni. Divisa tra il lavoro e i miei due figli, ho iniziato scrivendo codice in C#, alternando, fino ad oggi, progetti in WPF, Asp.NET MVC e Silverlight. Dopo una breve esperienza di sviluppo in Python, mi sono appassionata alle applicazioni mobile su Android. Se durante il giorno confeziono insieme al team progetti su misura per i clienti, una volta a casa \"rimpiazzo\" il computer con la macchina da cucire, per dedicarmi all’hobby di taglio e cucito."
+      },
+      "images": {
+        "standard": "vale-550.png",
+        "super": "vale-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/vleonardi"},
+        {"name": "Linkedin", "link": "http://www.linkedin.com/in/valerialeonardi"},
+        {"name": "Slideshare", "link": "http://www.slideshare.net/ValeriaLeonardi"}
+      ]
+    },
+    {
+      "name": "Maddalena",
+      "nickname": "",
+      "fullname": "Maddalena Germinario",
+      "description": {
+        "en": "When I was a little girl, if someone asked me what I would want to be as a grown-up I used to answer \"an engineer\". The passion for new technologies naturally led me to Computer Science. With a lot of sacrifice and perseverance my  dream came true: I have been working as a software developer for more than 8 years. I'm sure that the best is yet to come and so I face the daily challenges of my work willing to improve my skills and learn new things, also relying on the fruitful cooperation with the team. When I turn off the computer, I enjoy my great passions: AS Roma football team and Francesco Totti, shopping (I'm a bit of a fashion addict) and travelling.",
+        "it": "Quando mi chiedevano cosa avrei voluto fare da grande, rispondevo sempre l'ingegnere. La passione per le nuove tecnologie ha poi discriminato la strada da percorrere. Con sacrifici e perseveranza il sogno è diventato realtà e svolgo il lavoro di sviluppatore software da poco più di otto anni. Sono convinta che il meglio debba ancora venire ed è con lo spirito di migliorare sempre e la volontà di imparare cose nuove che affronto le sfide quotidiane del mio lavoro con l'aiuto indispensabile del team. Spento il computer, dedico il mio tempo alle mie grandi passioni: Totti e la AS Roma, lo shopping (sono una vera e propria fashion addicted) e i viaggi."
+      },
+      "images": {
+        "standard": "madda-550.png",
+        "super": "madda-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/10Madda"},
+        {"name": "Linkedin", "link": "http://www.linkedin.com/pub/maddalena-germinario/67/628/111"}
+      ]
+    },
+    {
+      "name": "Pietro",
+      "nickname": "",
+      "fullname": "Pietro Martinelli",
+      "description": {
+        "en": "I'm an experienced software engineer: I'm working since 2003 and I grew up professionally in the Java and JEE ecosystem. However, I always tried to keep alive my curiosity and my desire to learn something new every day: I therefore welcomed with enthusiasm the opportunity to bring to play my architectural and methodological skills in a different technological environment, firmly belief that the real common language is to desire to make things in the most clean and elegant way and to continuously share informations, skills and experiences. I collaborate since over fifteen years as a teaching assistant with the University of Brescia, discovering and rediscovering that teaching is the best way to learn. I'm a passionate cyclist and a serial reader - from Divina Commedia to technical readings, from novels to the phone book - but the great passion of my life are \"my women\": my wife and our wonderful daughters.",
+        "it": "Lavoro come ingegnere del software da una dozzina d'anni. Sono cresciuto professionalmente nel mondo Java e JEE ma ho sempre cercato di mantenere vivi la mia curiosità ed il mio desiderio di imparare ogni giorno qualcosa di nuovo: ho dunque accolto con molto entusiasmo l'occasione di rimettere in gioco le mie competenze architetturali e metodologiche in un diverso contesto tecnologico, forte della convinzione che la vera lingua comune consiste nell'amore per il \"fare le cose bene\" e per la condivisione continua di informazioni ed esperienze. Da oltre quindici anni collaboro come esercitatore con l'Università di Brescia, scoprendo e riscoprendo che insegnare è il modo migliore di imparare. Sono un appassionato ciclista (rigorosamente su strada) ed un lettore seriale (dalla Divina Commedia a testi tecnici, dai romanzi all'elenco del telefono), ma la grande passione della mia vita sono \"le mie donne\": mia moglie e le nostre splendide bimbe."
+      },
+      "images": {
+        "standard": "pietro-550.png",
+        "super": "pietro-super-550.png"
+      },
+      "social": [
+        {"name": "LinkedIn", "link": "https://it.linkedin.com/in/pietromartinelli"},
+        {"name": "GitLab", "link": "https://gitlab.com/pietrom"},
+        {"name": "GitHub", "link": "https://github.com/pietrom"},
+        {"name": "Twitter", "link": "https://twitter.com/amicofragile78"}
+      ]
+    },
+    {
+      "name": "Marco",
+      "nickname": "",
+      "fullname": "Marco Bonera",
+      "description": {
+        "en": "Live life with optimism and heart. I approached the world of development for my desire to discover, create and enjoy playing with technology. Since the first steps with Lego and Meccano. I have always enjoyed dismantling and reassembling. My desire for concreteness pushes me to always stubbornly complete the projects started with a focus on practicality and beauty. My tools are mostly C # WPF SQL but I do not dislike a look at the React Angular NodeJs web frameworks. I spend my free time in the mountains with my family and my beloved dog.",
+        "it": "Vivere la vita con ottimismo e cuore. Mi sono avvicinato al mondo dello sviluppo per la mia voglia di scoprire, creare e divertimi giocando con la tecnologia. Fin dai primi passi con il Lego e il Meccano mi sono sempre divertito a smontare e rimontare. La mia voglia di concretezza mi spinge a portare caparbiamente a termine sempre i progetti iniziati con un attenzione alla praticità e alla bellezza. I miei attrezzi sono perlopiù C# WPF SQL ma non disdegno uno sguardo ai framework web React Angular NodeJs. Il mio tempo libero lo passo in montagna con la mia famiglia e il mio amato cane. "
+      },
+      "images": {
+        "standard": "bonny-550.png",
+        "super": "bonny-super-550.png"
+      },
+      "social": [
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/marco-bonera-16674a6"},
+        {"name": "Github", "link": "https://github.com/ilbonny"},
+        {"name": "Twitter", "link": "https://twitter.com/thebonnyweb"}
+      ]
+    },
+    {
+      "name": "Chiara",
+      "nickname": "",
+      "fullname": "Chiara Ghiselli",
+      "description": {
+        "en": "My background is based on classical studies. Having put aside the Greek dictionary and the pedagogical textbooks, my choices and a bit of chance have led me to become familiar with the world of secretariat and administration. My motto is \"order\", I like to find the right place for everything and I am passionate about organization and arrangement, as much on the desk as within the walls of the house. In my free time I love reading and I enjoy cooking cakes for my two girls and my husband.",
+        "it": "La mia formazione è decisamente di impronta classica ma, messi da parte il dizionario di greco e i testi di pedagogia, un po' il caso e un po' le scelte mi hanno fatto approdare e familiarizzare con il mondo della segreteria e dell'amministrazione. La mia parola d'ordine è \"ordine\", mi piace trovare il posto giusto a ogni cosa e sono appassionata di organizzazione e sistemazione, tanto alla scrivania quanto tra le mura di casa. Nel tempo libero amo leggere e mi diverto a cucinare dolci per le mie due bambine e per mio marito."
+      },
+      "images": {
+        "standard": "chiara-550.png",
+        "super": "chiara-super-550.png"
+      },
+      "social": []
+    },
+    {
+      "name": "Umberto",
+      "nickname": "",
+      "fullname": "Umberto Franchini",
+      "description": {
+        "en": "Fascinated by the videogames of the 80s and 90s, I took the road of programming at a young age. After completing my university studies I started working as a web developer. I prefer front-end development, but over time I have expanded my skills to back-end development, effectively becoming a full-stack developer. I love aspects of my work that have to do with solving problems, giving value to end users, but my passions go beyond work: when I don't write code, I like to practice freediving in Garda Lake, where I live, and dedicate myself to my wife and my beautiful daughters.",
+        "it": "Affascinato dai videogames degli anni 80' 90', ho intrapreso la strada della programmazione in giovane età. Ultimati gli studi universitari mi sono affacciato al mondo del lavoro come web developer. Prediligo lo sviluppo front-end, ma nel tempo ho allargato le mie competenze anche allo sviluppo back-end, diventando a tutti gli effetti un full-stack developer.  Amo gli aspetti del mio lavoro che hanno a che fare col risolvere problemi dando valore ai clienti finali, ma le mie passioni vanno al di là del lavoro:  quando non scrivo codice, mi piace praticare apnea nel lago di Garda, su cui vivo, e dedicarmi a mia moglie ed alle mie splendide figlie."
+      },
+      "images": {
+        "standard": "umb-550.png",
+        "super": "umb-super-550.png"
+      },
+      "social": [
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/umberto-franchini-22707a25/"}
+      ]
+    },
+    {
+      "name": "Paolo",
+      "nickname": "paololaurenti",
+      "fullname": "Paolo Laurenti",
+      "description": {
+        "en": "I'm a software developer with several years’ experience. My passion for computer science was born the first time I saw my older brother playing with his \"Commodore 16\". I was very young and I didn't understand the meaning of \"insert and remove compact cassettes\", \"load\", \"return\", etc.. but it was so fascinating and it surely influenced me when, years later, I decided to study computer science. At the moment I mostly create back-end solution, I'm also very interested in distribution and scalability problems of software. I've been working for many years with C#, and lately I've become fond of NodeJs and specially of Erlang/Elixir. I think that open dialogue and knowledge sharing are the best way to learn from others and achieve personal growth together so I strongly believe in the community participation. In fact I've been coordinating the activities of “XPug Bologna” for several years and I’m involved with the organization of some italian conferences. Anyway the software world is not the only one for me: I'm a great basket fan, I love good food, good wine and long walks in the mountains.",
+        "it": "Sono uno sviluppatore software con numerose esperienze alle spalle.La mia passione per l’informatica credo sia nata la prima volta che vidi mio fratello maggiore giocare con il suo “Commodore 16”. Ero piccolo e non capivo nulla di “mettere e togliere cassette”, “load”, “return”, ecc… ma ne rimasi molto affascinato e sicuramente mi influenzò quando, qualche anno dopo, decisi che la mia strada sarebbe stata l’informatica. Attualmente creo soluzioni per lo più backend, mi interessano molto le problematiche di distribuzione e scalabilità del software. Lavoro da molti anni in C#, ma ultimamente mi sono appassionato a NodeJs e soprattutto a Erlang/Elixir. Ritengo che il confronto aperto e la condivisione della conoscenza siano il modo migliore per imparare dagli altri e crescere assieme perciò credo moltissimo nella partecipazione alle community. Infatti da qualche anno coordino le attività di XPug Bologna e partecipo all’organizzazione di alcune conferenze italiane. Per me non esiste solamente il mondo del software ma sono un grande appassionato di basket (a 360⁰), buon cibo, buon vino e camminate in montagna."
+      },
+      "images": {
+        "standard": "paolo-550.png",
+        "super": "paolo-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/paololaurenti"},
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/laurentipaolo/"},
+        {"name": "Github", "link": "https://github.com/paololaurenti"}
+      ]
+    },
+    {
+      "name": "Davide",
+      "nickname": "",
+      "fullname": "Davide Brognoli",
+      "description": {
+        "en": "I've been working as a software developer since 2005 and, since 6 years ago, I've focused almost exclusively on front end technologies.  Apart from building web applications, I've also accumulated experience as software consultant and technical trainer.  My day to day work involves a ton of coding - and sometimes fighting - with HTML, JS and CSS.  I keep myself up to date and enjoy experimenting with the latest trends in the industry.  I believe in giving back and knowledge sharing and I help the local developers community as much as I can through WEBdeBS, of which I'm an active member.",
+        "it": "Da oltre dieci anni lavoro come programmatore e negli ultimi anni ho deciso di concentrare i miei sforzi sullo sviluppo frontend.  Svolgo attività di sviluppo, consulenza e formazione:  HTML, CSS, JS sono le tecnologie con cui mi \"scontro\" ogni giorno e che cerco di approfondire per poter essere sempre aggiornato sugli ultimi trend di sviluppo.  Membro attivo della community WEBdeBS credo fermamente nell'importanza della condivisione delle conoscenze."
+      },
+      "images": {
+        "standard": "dav-550.png",
+        "super": "dav-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/davidebrognoli"},
+        {"name": "Linkedin", "link": "http://it.linkedin.com/in/davidebrognoli"},
+        {"name": "Github", "link": "http://github.com/davidebrognoli"}
+      ]
+    },
+    {
+      "name": "Alberto",
+      "nickname": "",
+      "fullname": "Alberto Fusar",
+      "description": {
+        "en": "I started working as a software developer about 15 years ago after taking a degree in telecommunications engineering. I have worked for many years in projects related to contact centers. I have always appreciated the real time and the fully integrated solutions required by this specific sector. I like following the whole lifecycle of a project, from the customer's requirements to the deployment to production searching the optimal solutions through the discussion and selection of the most appropriate technologies. In the first years of my career I used C/C++ programming language, then I switched to web technologies using Java and C# programming languages mainly. In my spare time I like reading, practicing sport and travelling. I now have less time to dedicate to these hobbies because I am a father, but I think it's always worth it... ",
+        "it": "Ho iniziato ad occuparmi dello sviluppo di applicazioni software una quindicina di anni fa, dopo aver ottenuto una laurea in ingegneria delle telecomunicazioni. Per molti anni ho partecipato a progetti legati al mondo dei contact center, ambito nel quale ho apprezzato la natura fortemente integrata e real-time delle soluzioni realizzate. Mi piace seguire tutte le fasi di un progetto, dall'esigenza iniziale del cliente fino al rilascio in produzione, e cercare le soluzioni ottimali attraverso il confronto e la selezione delle tecnologie più appropriate. Ho fatto la gavetta in linguaggio C/C++, passando successivamente alle tecnologie web utilizzando principalmente i linguaggi Java e C#. Nel tempo libero mi piace leggere, fare sport e viaggiare. Il ruolo di padre di famiglia ha ridotto il tempo che posso dedicare a queste attività, ma ne vale sempre la pena..."
+      },
+      "images": {
+        "standard": "alb-550.png",
+        "super": "alb-super-550.png"
+      },
+      "social": [
+        {"name": "Linkedin", "link": "https://it.linkedin.com/in/alberto-fusar-712b1466"}
+      ]
+    },
+    {
+      "name": "Mariachiara",
+      "nickname": "merissimissima",
+      "fullname": "Mariachiara Pezzotti",
+      "description": {
+        "en": "I'm a designer, I design everything that sits between users and technology. I believe that the \"good design\" is, first of all, to put yourself in the shoes of your users, to know their world and their needs and to implement solutions that help them to solve their day-to-day problems. I like teaching because it's challenging and a good way to keep myself up-to-date. When I'm away from my laptop, I sing in a gospel choir and I play the uke, for the neighborhood's joy.",
+        "it": "Sono Designer e mi occupo di progettare e disegnare tutto quello che c'è tra gli \"umani\" e la tecnologia. Credo che il buon design si costruisca, prima che dalla scelta del colore o del font perfetto, mettendosi nei panni degli utenti: conoscere il loro mondo, capire di cosa hanno bisogno e studiare soluzioni che possano, in concreto, migliorare la loro esperienza. Mi piace insegnare: è un modo bellissimo per tenersi aggiornati e mettersi alla prova. Lontano dal computer, la mia più grande passione è la musica: canto in coro gospel e da qualche anno (per la gioia dei vicini) tento di suonare l'ukulele."
+      },
+      "images": {
+        "standard": "mary-550.png",
+        "super": "mary-super-550.png"
+      },
+      "social": [
+        {"name": "Twitter", "link": "https://twitter.com/merissimissima"},
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/mariachiarapezzotti"}
+      ]
+    },
+    {
+      "name": "Jacek",
+      "nickname": "",
+      "fullname": "Jacek Wronski",
+      "description": {
+        "en": "I mainly deal with the development of web applications in ASP.NET with some braces in the mobile world. I like to try and experiment with new technologies and languages ​​with particular attention to architecture and methodologies. DDD, TDD, Microservices and many others are my favorite topics. As soon as possible I participate in events and meetings organized by the community of developers and enthusiasts on the Italian territoryas I believe that in this sector we never stop and we must always keep up with the times with constant updatesand exchange of knowledge. After a day in front of the monitor I dedicate myself to teaching kung fu which has become an integral part of my life. My weak point?Good food!",
+        "it": "Mi occupo principalmente dello sviluppo di applicazioni web in ASP.NET con qualche parantesi nel mondo mobile. Mi piace provare e sperimentare nuove tecnologie e linguaggi con particolare attenzione alle architetture e metodologie. DDD, TDD, Microservizi e molti altri sono gli argomenti che preferisco. Appena possibile partecipo ad eventi e meeting organizzati dalle community di sviluppatori e appassionati sul territorio italiano in quanto ritengo che in questo settore non ci si ferma mai e bisogna stare sempre al passo con i tempi con aggiornamenti costanti e scambio di conoscenze. Dopo una giornata davanti al monitor mi dedico all'insegnamento del kung fu diventato ormai parte integrante della mia vita. Il mio punto debole? Il buon cibo!"
+      },
+      "images": {
+        "standard": "jac-550.png",
+        "super": "jac-super-550.png"
+      },
+      "social": [
+        {"name": "Linkedin", "link": "https://www.linkedin.com/in/jacek-wronski-17b94bb7/"}
+      ]
+    }
+  ]
+}

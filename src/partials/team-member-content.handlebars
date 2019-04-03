@@ -1,0 +1,22 @@
+<div class="team-member-content">
+  <header>
+    <h1>
+      {{member.name}} {{#if member.nickname}}@{{member.nickname}}{{/if}}
+    </h1>
+    <h2>
+      {{member.fullname}}
+    </h2>
+    <ul class="list-inline tags">
+      {{#each member.social}}
+      <li>
+        <a href="{{this.link}}" target="_blank">
+          {{this.name}}
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </header>
+  <p>
+    {{lookup member.description lang}}
+  </p>
+</div>

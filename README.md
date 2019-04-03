@@ -1,4 +1,2 @@
-website
-=======
-
-Company web site
+# resume
+My resume

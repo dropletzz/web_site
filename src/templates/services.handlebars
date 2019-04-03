@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{{> ../partials/head }}
+
+<body>
+  {{> ../partials/header }}
+  <div id="main" class="container">
+    <div id="services-content">
+      {{#each services}}
+      {{#ifcond @index 0}}
+      <div></div>
+      {{else}}
+      <div id="service-separator-{{inc @index}}" class="service-separator"></div>
+      {{/ifcond}}
+      <article id="service-{{@index}}" class="service">
+        <header>
+          <h1>{{{lookup this.title ../lang}}}</h1>
+        </header>
+        <p>{{lookup this.description ../lang}}</p>
+        <div class="action">
+          <a href="{{lookup ../baseUrl ../lang}}{{this.link}}">
+            <img src="{{this.image}}" alt="">
+          </a>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+    {{> ../partials/call-to-action }}
+  </div>
+  {{> ../partials/footer }}
+</body>
+
+</html>

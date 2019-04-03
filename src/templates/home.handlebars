@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{{> ../partials/head }}
+
+<body>
+  {{> ../partials/header }}
+  <div id="main" class="container">
+    <div id="team-cover">
+      <span>
+        {{lookup cover lang}}
+      </span>
+    </div>
+    <header id="team-header">
+      <h1>
+        {{{lookup title lang}}}
+      </h1>
+      {{{lookup description lang}}}
+    </header>
+    <div class="team-member-container">
+      {{> ../partials/team-member}}
+    </div>
+    {{> ../partials/call-to-action }}
+  </div>
+  {{> ../partials/footer }}
+
+</body>
+
+</html>

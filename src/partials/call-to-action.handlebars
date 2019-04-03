@@ -1,0 +1,19 @@
+<div id="content-footer">
+	<h1>
+		{{lookup call_to_action.text lang}}
+	</h1>
+	<a href="mailto:{{call_to_action.mail}}">
+		{{call_to_action.mail}}
+	</a>
+	<nav>
+		<ul class="list-inline">
+      {{#each menu}}
+			<li>
+				<a href="{{lookup ../baseUrl ../lang}}{{this.link}}/">
+					{{lookup this.label ../lang}}
+				</a>
+			</li>
+      {{/each}}
+		</ul>
+	</nav>
+</div>
