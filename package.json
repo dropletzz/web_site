@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.config.js",
+    "release": "npm run build && git subtree push --prefix dist origin gh-pages",
     "build": "NODE_ENV=production webpack --config ./build/webpack.config.js --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
